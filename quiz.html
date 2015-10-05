@@ -1,0 +1,131 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>What Paralympic Event Should You Watch?</title> 
+<link rel="stylesheet" href="style.css" type="text/css">
+
+</head> 
+<body> 
+
+ <div id="header">
+ 
+ </div>
+ 
+ <div id="nav">
+ <ul>
+<li> <a href="http://www.rio2016.com/en/paralympics/sports">Home</a></li>
+ </ul>
+ </div>
+ 
+  <div id="section">
+<div id="main"> 
+<div id="header"><h1>What Paralympic sport should you watch?</h1><h2>The Paralympics are still months away but do you know what events will be aired or the competitors? Take this short quiz to see what events you should be following for <a href="http://www.rio2016.com/en/paralympics/sports">Rio 2016</a>! </h2>
+
+
+
+
+</div> 
+
+<table> 
+<form  id="form1" action=" "/> 
+<tr><td> 
+<p>Do you like team or solo sports?</p></td><td> 
+<input type="radio" name="sport" id="team" value="1" />Team</td><td> 
+<input type="radio" name="sport" id="solo" value="2" />Solo </td><td> 
+<input type="radio" name="sport" id="both" value="3" />Both
+</td></tr> 
+<tr><td> 
+<p>What kind of venue?</p></td><td> 
+<input type="radio" name="activity" id="stadium" value="1" />Stadium</td><td> 
+<input type="radio" name="activity" id="outside" value="2" />Outside</td><td> 
+<input type="radio"  name="activity"id="track" value="3" />Track/Arena
+</td></tr> 
+<tr><td> 
+<p>What is your ideal athlete like?</p></td><td> 
+<input type="radio" name="type" id="quick" value="1" />Quick</td><td> 
+<input type="radio" name="type" id="strong" value="2" />Strong</td><td> 
+<input type="radio" name="type" id="skill" value="3" />Mastery of skill</td> 
+</tr> 
+<tr><td> 
+ 
+
+<br /> 
+<input type="submit"  value="Submit"> 
+</td></tr> 
+</form> 
+</table> 
+<p id="answer"></p> 
+<p id="answer2"></p> 
+
+
+<script> 
+    agevar = ['team', 'solo', 'both']; 
+    activityvar = ['outside', 'stadium', 'track']; 
+    typevar = ['quick', 'strong', 'skill']; 
+	   
+    
+	 
+ 	   document.getElementById("form1").onsubmit=function() { 
+ 	   for(i=0; i<agevar.length; i++) { 
+ 	   if (document.getElementById(agevar[i]).checked) { 
+ 	   age = document.getElementById(agevar[i]).value;  
+ 	   } 
+ 	   }//end for 
+ 	    
+ 	   for(i=0; i<activityvar.length; i++) { 
+ 	   if (document.getElementById(activityvar[i]).checked) { 
+ 	   activity = document.getElementById(activityvar[i]).value;  
+ 	   } 
+ 	   }//end for 
+ 	    
+ 	   for(i=0; i<typevar.length; i++) { 
+ 	   if (document.getElementById(typevar[i]).checked) { 
+ 	   type = document.getElementById(typevar[i]).value;  
+ 	   } 
+ 	   }//end for 
+ 	   
+	    
+	   
+ 	   total = parseInt(age) + parseInt(activity) + parseInt(type); 
+ 	   //document.getElementById("answer").innerHTML = total; 
+ 	    
+ 	   if(total <4) { 
+document.getElementById("answer2").innerHTML = "You should watch the wheelchair rugby, wheelchair tennis or sailing events!"; 
+ } 
+  
+    if(total >=4 && total <7) { 
+ document.getElementById("answer2").innerHTML = "You should watch the triathlon, canoe, swimming, wheelchair fencing, powerlifting, boccia, road cycling events! Your interests definitely gives you a lot to choose from!    "; 
+ } 
+ 	 
+ 	if(total >=7) { 
+	 document.getElementById("answer2").innerHTML = "You should watch the equestrian, archery,or Judo events! "; 
+ document.getElementById("answer2").innerHTML = "You should watch, equestrian, Judo, ."; 
+ }    
+ 		    
+ 	   return false; // required to not refresh the page; just leave this here 
+ 	   }// end the submit function 
+ 	 
+  
+</script> 
+
+<h2>
+<p>Countdown to the Paralympics! </p>
+<script language="JavaScript">
+TargetDate = "12/31/2020 5:00 AM";
+BackColor = "red";
+ForeColor = "orange";
+CountActive = true;
+CountStepper = -1;
+LeadingZero = true;
+DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds.";
+FinishMessage = "It is finally here!";
+</script>
+<script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script> </h2>
+
+ 
+ 
+ 
+
+</body> 
+ </html> 
